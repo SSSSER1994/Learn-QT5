@@ -29,3 +29,11 @@ add_executable(test_widget ${CH2_SRC_LIST})
 
 target_link_libraries(test_widget ${OPENGL_LIBRARIES} ${VTK_LIBRARIES}
                       ${Qt5Widgets_LIBRARIES} ${Qt5OpenGL_LIBRARIES})
+
+set(CH3_SRC_LIST
+    src/ch3/main.cc include/ch3/test_qwdialog.h include/ch3/user_qwdialog.h
+    src/ch3/test_qwdialog.cc src/ch3/user_qwdialog.cc)
+add_executable(test_qdialog ${CH3_SRC_LIST})
+
+target_link_libraries(test_qdialog ${OPENGL_LIBRARIES} ${VTK_LIBRARIES}
+                      ${Qt5Widgets_LIBRARIES} ${Qt5OpenGL_LIBRARIES})
