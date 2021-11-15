@@ -37,3 +37,7 @@ add_executable(test_qdialog ${CH3_SRC_LIST})
 
 target_link_libraries(test_qdialog ${OPENGL_LIBRARIES} ${VTK_LIBRARIES}
                       ${Qt5Widgets_LIBRARIES} ${Qt5OpenGL_LIBRARIES})
+
+set(CH4_SRC_LIST src/ch4/main.cc include/ch4/decorator.h src/ch4/decorator.cc)
+add_executable(decorator_pattern ${CH4_SRC_LIST})
+target_link_libraries(decorator_pattern ${Qt5Widgets_LIBRARIES})
